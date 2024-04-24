@@ -1,6 +1,5 @@
-package Homework3;
+package org.example.theinternettests.demoblaze;
 
-import com.google.common.annotations.VisibleForTesting;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,10 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-
+import org.testng.annotations.Test;
 import java.time.Duration;
-import java.util.Random;
 
 public class PlaceOrderTest {
     /**
@@ -28,7 +25,8 @@ public class PlaceOrderTest {
      * 10.confirmam comanda si dam ok
      */
 
-    public static void main(String[] args) throws Exception {
+    @Test
+    public void test2() throws Exception{
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized");
         WebDriver driver = new ChromeDriver(options);
