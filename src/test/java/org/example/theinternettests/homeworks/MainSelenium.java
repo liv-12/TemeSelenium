@@ -1,4 +1,4 @@
-package Homework;
+package org.example.theinternettests.homeworks;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
